@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+body {
+    flex: 1 0 auto;
+}
+
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+nav {
+    background-color: #FFBFC5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.175);
+}
+.nav ul {
+    font-size: 35px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.nav-link {
+
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+
+
+.navbar-toggler {
+    border: none;
+}
+.modal-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.modal-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.modal-nav li {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #FFBFC5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.modal-nav a {
+    color: #b38f95;
+}
+
+.btn-card {
+    border: none;
+    background-color: #FFBFC5;
+    font-size: 30px;
+}
+footer {
+    background-color: #FFBFC5;
+    height: 120px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+/* LOGIN */
+.section-login {
+
+    /* background-color: black; */
+    display: grid;
+    place-content: center;
+}
+.content-login {
+    display: flex;
+    flex-direction: column;
+    padding: 167px;
+    height: 100vh !important;
+}
+
+.login{
+
+    width: 500px !important;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.175);
+    height: 500px !important;
+    padding-top: 80px;
+}
+.all-sochial-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    width: 20% !important;
+}
+.social i {
+    margin: 5px;
+    font-size: 17px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: black;
+}
+.complete-order {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.complete {
+    width: 50%;
+
+}
+.datails {
+    width: 40%;
+    /* background-color: aqua; */
+    border: 2px solid black;
+}
+.complete form {
+    display: flex;
+    flex-direction: column;
+
+}
+.complete form input {
+    margin-top: 20px;
+}
+
+.datails ul li {
+    margin-top: 20px;
+    display: flex;
+}
+
+.product-details {
+    height: 70vh;
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.btn-whatsapp:hover {
+    scale: 1.1;
+}
+.btn-whatsapp i {
+    font-size: 35px;
+}
+
+
+@media (max-width: 768px) {
+    nav, footer {
+        overflow: hidden;
+        height: auto;
+    }
+    .section-login {
+        width: 95% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .login {
+        width: 100% !important;
+        justify-content: center;
+    }
+    .social {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    .complete-order {
+        display: flex;
+        flex-direction: column;
+        width: 100%!important;
+    }
+    .complete {
+        width: 95% !important;
+    }
+    .datails {
+        width: 95% !important;
+        margin-top: 20px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .contact-number, .contact-location {
+        width: 100% !important;
+    }
+    .contact-location {
+        margin-top: 10px;
+    }
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-p {
+        font-size: 20px !important;
+    }
+    .info-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-one div {
+        margin-top: 20px;
+    }
+    #success-alert{
+        width: 70% !important;
+    }
+}
+
+/* ------------------------------------------------
+---------------Start Products
+--------------------------------------------------- */
+.products {
+    margin-top: 70px;
+}
+.product-info {
+    padding: 10px;
+}
+.product-info h3 {
+    font-family: Almarai;
+    font-weight: bold;
+    font-size: 22px;
+}
+.product-info p {
+    font-size: 14px;
+}
+.stars i {
+    color: var(--mainColor);
+    font-size: 20px;
+}
+.price :first-child {
+    color: var(--secondaryColor);
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.quick-icons {
+    position: absolute;
+    background-color: transparent;
+    right: -45px;
+    top: 15px;
+    height: 150px;
+    width: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    border: 1px solid #ccc;
+}
+
+.quick-icons i {
+    font-size: 18px;
+}
+.product:hover .quick-icons {
+    right: 0;
+}
+/* ------------------------------------------------
+---------------End Products
+--------------------------------------------------- */
+.carousel-images {
+    position: absolute !important;
+    bottom: -30px !important;
+}
+.img-slider {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 15px;
+    border: 1px dashed black !important;
+}
+
+.btns-quantity button{
+    border: 1px solid #eee;
+}
+.btns-quantity button:hover {
+    border: 1px solid #ccc;
+}
+.btns-quantity button:active {
+    border: 1px solid #ccc !important;
+}
+.btns-quantity-mini button {
+    background-color: #fff !important;
+    border: 1px solid #ccc;
+}
+.btns-quantity-mini button:hover {
+    border: 1px solid #ccc;
+
+}
+.product {
+    cursor: pointer;
+}
+.hide-btn {
+    display: none !important;
+}
+.show-btn {
+    display: flex !important;
+}
